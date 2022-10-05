@@ -1,11 +1,13 @@
 import "./App.css";
-import CustomizedTables from "./TableView";
+import MobTable from "./Table";
+import EorzeaTime from "./Timer";
 
 function App() {
   return (
-    <div className="title">
-      FFXIV Island Sanctuary Rare Mob Spawn Times
-      <CustomizedTables></CustomizedTables>
+    <div className="app">
+      <div className="title">FFXIV Island Sanctuary Rare Mob Spawn Times</div>
+      <EorzeaTime />
+      <MobTable />
     </div>
   );
 }
