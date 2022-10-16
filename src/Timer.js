@@ -2,21 +2,21 @@ import { useState, useEffect } from "react";
 import "./timer.css";
 
 export default function EorzeaTime() {
-  const [time, setTime] = useState();
+  const [time, setTime] = useState("--:-- --"); //set initial time to "--:-- --"
 
   useEffect(() => {
     const timer = setInterval(() => {
-      getEorzeaTime(new Date());
-    }, 1000);
-    return () => clearInterval(timer);
+      getEorzeaTime(); // get the current time
+    }, [100]); // update every 100ms
+    return () => clearInterval(timer); // clear the timer when the component unmounts
   });
 
-  function getEorzeaTime(date) {
+  function getEorzeaTime() {
     const eorzeaTime = new Date(); // Create a new date object
-    const unixTime = Math.floor(date.getTime() * (1440 / 70));
+    const unixTime = Math.floor(new Date().getTime() * (1440 / 70)); // Get the unix time of the current time and convert it to eorzea time
     eorzeaTime.setTime(unixTime); //set time to unix time
 
-    let hours = eorzeaTime.getUTCHours();
+    let hours = eorzeaTime.getUTCHours(); // get the hours
     let minutes = eorzeaTime.getUTCMinutes();
     let amorpm = hours >= 12 ? "PM" : "AM"; //set am or pm
 

@@ -9,7 +9,7 @@ export default function MobTable() {
           <tr
             style={{
               backgroundColor: "#ccc",
-              fontSize: "130%",
+              fontSize: "5px",
             }}
           >
             <th>Name</th>
@@ -24,7 +24,7 @@ export default function MobTable() {
           {MobData.map((mob) => {
             return (
               <tr key={mob.id}>
-                {mob.name}
+                <td>{mob.name}</td>
                 <td>{mob.size}</td>
                 <td>{mob.location}</td>
                 <td>{mob.weather}</td>

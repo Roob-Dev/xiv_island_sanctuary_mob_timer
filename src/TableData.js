@@ -5,7 +5,7 @@ const MobData = [
     size: "Large",
     location: "X: 17.6, Y: 24.1",
     weather: "Showers",
-    time: ["00:00", "23:59"],
+    time: ["12:00 AM", "11:59 PM"],
     image: "",
   },
   {
@@ -14,7 +14,7 @@ const MobData = [
     size: "Small",
     location: "X: 18.0, Y: 13.0",
     weather: "Rain",
-    time: ["00:00", "23:59"],
+    time: ["12:00 AM", "11:59 PM"],
     image: "",
   },
   {
@@ -23,7 +23,7 @@ const MobData = [
     size: "Large",
     location: "X: 13.1, Y: 28.4",
     weather: "Rain",
-    time: ["00:00", "23:59"],
+    time: ["12:00 AM", "11:59 PM"],
     image: "",
   },
   {
@@ -32,7 +32,7 @@ const MobData = [
     size: "Medium",
     location: "X: 31.5, Y: 11.5",
     weather: "All",
-    time: ["00:00", "03:00"],
+    time: ["12:00 AM", "03:00 AM"],
     image: "",
   },
   {
@@ -41,7 +41,7 @@ const MobData = [
     size: "Large",
     location: "X: 26.3, Y: 22.8",
     weather: "All",
-    time: ["03:00", "06:00"],
+    time: ["03:00 AM", "06:00 AM"],
     image: "",
   },
   {
@@ -50,7 +50,7 @@ const MobData = [
     size: "Small",
     location: "X: 21.0, Y: 26.4",
     weather: "All",
-    time: ["06:00", "09:00"],
+    time: ["06:00 AM", "09:00 AM"],
     image: "",
   },
   {
@@ -59,7 +59,7 @@ const MobData = [
     size: "Small",
     location: "X: 16.0, Y: 19.0",
     weather: "All",
-    time: ["09:00", "12:00"],
+    time: ["09:00 AM", "12:00 PM"],
     image: "",
   },
   {
@@ -68,7 +68,7 @@ const MobData = [
     size: "Small",
     location: "X: 18.8, Y: 11.9",
     weather: "All",
-    time: ["12:00", "15:00"],
+    time: ["12:00 PM", "03:00 PM"],
     image: "",
   },
   {
@@ -77,7 +77,7 @@ const MobData = [
     size: "Medium",
     location: "X: 16.6, Y: 11.8",
     weather: "All",
-    time: ["15:00", "18:00"],
+    time: ["03:00 PM", "06:00 PM"],
     image: "",
   },
   {
@@ -86,7 +86,7 @@ const MobData = [
     size: "Medium",
     location: "X: 20.4, Y: 20.1",
     weather: "All",
-    time: ["18:00", "21:00"],
+    time: ["06:00 PM", "09:00 PM"],
     image: "",
   },
   {
@@ -95,7 +95,7 @@ const MobData = [
     size: "Medium",
     location: "X: 13.1, Y: 11.5",
     weather: "Clear Skies",
-    time: ["00:00", "23:59"],
+    time: ["12:00 AM", "11:59 PM"],
     image: "",
   },
   {
@@ -104,7 +104,7 @@ const MobData = [
     size: "Large",
     location: "X: 12.1, Y: 17.2",
     weather: "Cloudy",
-    time: ["00:00", "23:59"],
+    time: ["12:00 AM", "11:59 PM"],
     image: "",
   },
   {
@@ -113,7 +113,7 @@ const MobData = [
     size: "Small",
     location: "X: 21.6, Y: 23.1",
     weather: "Fair Skies",
-    time: ["00:00", "23:59"],
+    time: ["12:00 AM", "11:59 PM"],
     image: "",
   },
   {
@@ -122,7 +122,7 @@ const MobData = [
     size: "Small",
     location: "X: 22.3, Y: 20.5",
     weather: "Fog",
-    time: ["00:00", "23:59"],
+    time: ["12:00 AM", "11:59 PM"],
     image: "",
   },
   {
@@ -131,7 +131,7 @@ const MobData = [
     size: "Small",
     location: "X: 26.6, Y: 19.5",
     weather: "Fog",
-    time: ["00:00", "23:59"],
+    time: ["12:00 AM", "11:59 PM"],
     image: "",
   },
 ];
