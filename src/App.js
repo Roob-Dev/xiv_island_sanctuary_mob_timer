@@ -1,4 +1,3 @@
-import "./App.css";
 import MobTable from "./Table";
 import EorzeaTime from "./Timer";
 import NavBar from "./NavBar";
@@ -6,7 +5,7 @@ import NavBar from "./NavBar";
 function App() {
   return (
     <div className="app">
-      <div>
+      <div> 
         <NavBar />
         <EorzeaTime />
         <MobTable />

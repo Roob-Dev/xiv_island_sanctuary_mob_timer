@@ -2,31 +2,33 @@ import { useState, useEffect } from "react";
 import "./timer.css";
 
 export default function EorzeaTime() {
-  const [time, setTime] = useState("--:-- --"); //set initial time to "--:-- --"
+  const [time, setTime] = useState();
 
   useEffect(() => {
     const timer = setInterval(() => {
-      getEorzeaTime(); // get the current time
-    }, [100]); // update every 100ms
-    return () => clearInterval(timer); // clear the timer when the component unmounts
+      getEorzeaTime();
+    }, [100]);
+    return () => clearInterval(timer);
   });
 
   function getEorzeaTime() {
-    const eorzeaTime = new Date(); // Create a new date object
-    const unixTime = Math.floor(new Date().getTime() * (1440 / 70)); // Get the unix time of the current time and convert it to eorzea time
-    eorzeaTime.setTime(unixTime); //set time to unix time
-
-    let hours = eorzeaTime.getUTCHours(); // get the hours
+    const eorzeaTime = new Date();
+    const unixTime = Math.floor(new Date().getTime() * (1440 / 70));
+    eorzeaTime.setTime(unixTime);
+    let hours = eorzeaTime.getUTCHours();
     let minutes = eorzeaTime.getUTCMinutes();
-    let amorpm = hours >= 12 ? "PM" : "AM"; //set am or pm
+    let amorpm = hours >= 12 ? "PM" : "AM";
 
-    hours = hours % 12; //set 12 hour time
-    hours = hours ? hours : 12; //if hours is 0, set to 12
-    minutes = minutes < 10 ? "0" + minutes : minutes; //add 0 to minutes if less than 10
-
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
     let timeString = hours + ":" + minutes + " " + amorpm;
 
     setTime(timeString);
   }
-  return <div className="time">Eorzea Time: {time}</div>;
+  return (
+    <div className="time" style={{ margin: "2em" }}>
+      Eorzea Time: {time}
+    </div>
+  );
 }
